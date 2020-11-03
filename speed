@@ -1,6 +1,13 @@
+# Write a function for checking the speed of drivers.
+# This function should have one parameter: speed.
+# If speed is less than 70, it should print "OK".
+# Otherwise, for every 5 km above the speed limit of 70, it should give the driver one demerit point and print the total number of demerit points.
+# For example, if the speed is 80, it should print: “2 points will go on your driving record”.
+# f the driver gets more than 12 demerit points, the function should print: “License suspended”.
+
 def speed_check(speed):
-  if speed <= 70:
-    print('OK')
+	if speed <= 70:
+		print('OK')
   else:
     speed1 = (speed - 70) // 5
 
