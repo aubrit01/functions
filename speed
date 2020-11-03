@@ -1,0 +1,12 @@
+def speed_check(speed):
+  if speed <= 70:
+    print('OK')
+  else:
+    speed1 = (speed - 70) // 5
+
+    if speed1 <= 12:
+      print(str(speed1) + ' points will go on your driving record.')
+    else:
+      print('License suspended.')
+
+enter = speed_check(int(input('Enter speed: ')))
